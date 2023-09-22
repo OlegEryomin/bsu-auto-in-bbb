@@ -40,9 +40,6 @@ public class Moodle {
 
         new Actions(driver)
                 .click(input)
-                .perform();
-
-        new Actions(driver)
                 .sendKeys(value)
                 .perform();
     }
