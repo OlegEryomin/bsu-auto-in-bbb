@@ -1,16 +1,21 @@
 package ru.edu.bsu;
 
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Application start...");
+    public static void main(String[] args) throws IOException {
 
-        Moodle moodle = new Moodle(
-                "https://pegas.bsu.edu.ru",
-                "1227123",
-                "***"
+        Schedule schedule = new Schedule(
+                true,
+                "12002339"
         );
-        moodle.connectBigBlueButton(1604232, true);
+
+//        Moodle moodle = new Moodle(
+//                "https://pegas.bsu.edu.ru",
+//                "1227123",
+//                "*****"
+//        );
+//        moodle.connectBigBlueButton(1604232, true);
 
     }
 }
